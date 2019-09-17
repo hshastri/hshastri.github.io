@@ -1,0 +1,14 @@
+<img src="[webdevimg] (imported)" width="800" height="626" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Harsh Shastri -->
+<area shape="poly" coords="10,25,25,292,280,285,224,35" href="fox.mp3" />
+<area shape="poly" coords="252,28,321,282,522,273,411,31" href="leopard.mp3" />
+<area shape="poly" coords="535,34,545,272,782,114,782,113" href="zebra.mp3" />
+<area shape="poly" coords="197,320,18,604,444,607,409,332" href="elephantcub.mp3" />
+<area shape="poly" coords="474,312,485,624,750,331,719,327,686,343" href="pandalion.mp3" />
+</map>
