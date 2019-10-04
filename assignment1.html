@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8" name="viewport" 
+        content= "width=device-width, initial-scale=1.0">
+        <title>Example</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <style>
+            .backgroundVideo{
+                padding: 200px;
+                margin: 50px;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                position: fixed;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: -100;
+            }
+
+            .text{
+                position: absolute;
+                top: 30%;
+                left: 30%;
+                padding: 100px;
+                font-size: 2em;
+            }
+
+            .unorderedList{
+                top: 10%;
+                right: 10%;
+                float:right;
+                font-size: 1.5em;
+            }
+
+            i{
+                vertical-align: text-bottom;
+            }
+
+            body{
+                color: #f8d568;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class = "backgroundVideo">
+
+            <video autoplay loop muted>
+                    <source src="http://video2.ignitemotion.com/files/mp4/asteroidbelt2.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+
+        <div class="text">
+            Harsh Shastri<br>
+            My home page
+        </div>
+
+        <div class ="unorderedList">
+            
+                <ul>
+                    <i class="fa fa-clipboard" style="font-size:24px">
+                    About me </i>
+                </ul>
+
+                <ul>
+                    <i class="fa fa-clipboard" style="font-size:24px">
+                    Resume </i>
+                </ul>
+
+                <ul>
+                    <i class="fa fa-clipboard" style="font-size:24px">
+                    Hobbies </i>
+                </ul>
+
+                <ul>
+                    <i class="fa fa-clipboard" style="font-size:24px">
+                    Work </i>
+                </ul>
+        </div>  
+        
+        
+    
+       
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script >
+    // jQuery way
+    $(document).ready(function(){
+      var jQueryLink = $("<a href='http://www.bridgew.edu' title='JQuery' >Visit us</a>");
+
+      // jQuery long verson
+      /*
+      var jQueryLink = $("<a></a>");
+      jQueryLink.attr("href", 'http://www.bridgew.edu');
+      jQueryLink.attr("title", "JQuery Long version");
+      jQueryLink.html("Visit us");
+      */
+     
+      // Vanila Java script
+      /*
+      var ah = document.createElement("a");
+      ah.setAttribute("href","http://www.bridgew.edu");
+      ah.setAttribute("title","DOM long version");
+      ah.appendChild(document.createTextNode("Visit us"));
+
+      document.querySelector("#append").appendChild(ah);
+      document.querySelector("#prepend").prepend(ah.cloneNode(true));
+      */
+      // In the DOM, the last update "wins".
+      // The document is a tree, not an acyclic graph, so it's necessary to clone nodes.
+
+      $("#append").append(jQueryLink);
+      $("#prepend").prepend(jQueryLink.clone());
+
+
+    });
+  </script>
+  <title>Node Creation</title>
+</head>
+<body>
+  <h2 id="prepend">&nbsp; Bridgewater State University</h2>
+  <h2 id="append">Bridgewater State University&nbsp; </h2>
+  <script>
+    // JavaScript
+    /*
+    function foo(){
+      // Node creation
+      var jsLink = document.createElement("a");
+      jsLink.href = "http://www.bridgew.edu";
+      jsLink.innerHTML = "Visit us";
+      jsLink.title="JavaScript";
+
+      document.getElementById("append").appendChild(jsLink);
+
+      var prepend = document.getElementById("prepend");
+      prepend.insertBefore(jsLink.cloneNode(true),prepend.childNodes[0]);
+    }
+    window.addEventListener('load',foo);
+    */
+  </script>
+</body>
+</html>
