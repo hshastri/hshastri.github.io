@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8" name="viewport" 
+        content= "width=device-width, initial-scale=1.0">
+        <title>Example</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/f2d1f6a6fa.js" crossorigin="anonymous"> </script>
+        
+        <style>
+
+            body{
+                background-image: url("backgroundimg.png");
+                background-size: cover;
+            }
+
+            .container {
+                margin: 0;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+             }
+            .row{
+                font-size: 45px;
+                font-weight: bold;
+                color:red;  
+                opacity: 0.8;
+            }
+
+            a{
+                color:red;  
+            }
+
+            .col-md{
+                text-align: center;
+            }
+
+            @media screen and (max-width: 1000px){
+                body{
+                    background-size: cover;
+                }
+                .container{
+                    top: 20%;
+                    left: 30%;
+                    margin-left: 10%;
+                    transform: translate(-50%, 50%);
+                }
+                .row{
+                    font-size: 30px;
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            
+	        <div class="row">
+
+	            <div class="col-md">
+                    <span class="name"> 
+                        <i class="fas fa-user"></i>
+                        Harsh Shastri
+                    </span>
+	            </div>
+
+	            <div class="col-md">
+	                <span class="Resume"> 
+                        <i class="far fa-file"></i>
+                        <a href="Resume.pdf">Resume</a>
+                    </span>
+	            </div>
+
+	            <div class="col-md">
+	                <span class="LinkedLn"> 
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/
+                        LinkedIn">LinkedIn</a>
+                    </span>
+	            </div>
+	        </div>
+
+        </div>
+
+        
+    </body>
+</html>
